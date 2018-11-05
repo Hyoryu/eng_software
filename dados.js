@@ -19,13 +19,13 @@ function geraDispositivos(qtdDispositivos){
 	return dados;
 }
 
-const RANGE = Math.floor(Math.random() * (1000 - 20) + 20);
-const DISPOSITIVOS = Math.floor(Math.random() * (10 - 1) + 1);
-const DIAS = Math.floor(Math.random() * (30 - 1) + 1);
+const RANGE = Math.floor(Math.random() *(1000 - 20) + 20);
+const DISPOSITIVOS = Math.floor(Math.random() * (8 - 2) + 2);
+const DIAS = Math.floor(Math.random() * (20 - 2) + 2);
 
 const dados = {
 	dispositivos: geraDispositivos(DISPOSITIVOS),
 	consumo: geraDados(DIAS, RANGE, DISPOSITIVOS)
 }
 
-console.log(dados.dispositivos);
+console.log(dados.consumo);
