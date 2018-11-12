@@ -1,0 +1,62 @@
+body{
+	background-color: #999999;
+}
+
+#grafico_Consumo_em_W{
+	padding-top: 2em;
+	padding-left: 1em;
+	display: inline-block;
+}
+
+#grafico_Consumo_em_Dinheiros{
+	display: inline-block;
+	visibility: hidden;
+	padding-top: 2em;
+	padding-left: 1em;
+}
+
+#Consumo_W{
+	width: 62.5em; 
+	height: 31.25em;
+}
+
+#Consumo_Reais{
+	width: 62.5em; 
+	height: 31.25em;
+}
+
+table{
+	border-collapse: collapse;
+	cursor: default;
+}
+
+th.tb_escolheGrafico_TD{
+	text-align: center;
+    padding: 0.6em;
+}
+
+th.tb_escolheGrafico_TD:hover{
+	background-color: #add8e6;
+	cursor: pointer;
+}
+
+#tabelaPotencia, #tabelaConsumo {
+    border-collapse: collapse;
+    background-color: #222222;
+}
+
+td, th {
+    text-align: center;
+    padding: 0.6em;
+}
+
+th.tb_potTH, th.tb_escolheGrafico_TD{
+	background-color: #393939;
+	color: #dc143c;
+}
+td.tb_potTD{
+	color: #808080;
+}
+tr.tb_potTR:hover{
+	background-color: #add8e6;
+}

@@ -4,15 +4,36 @@
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <script type="text/javascript" src="./dados.js"></script>
         <script type="text/javascript" src="./grafico_linha.js"> </script>
-        <link rel="stylesheet" type="text/css" href="tabela.css">
+        <script type="text/javascript" src="./setarGrafico.js"></script>
+        <link rel="stylesheet" type="text/css" href="estilo.css">
     </head>
     <body>
-        <div id="linechart_material" style="width: 900px; height: 500px"></div>
-        <div>
-            <h3>Tabela com os dados </h3>
-            <table id="tabela" bac>
-                <script type="text/javascript" src="./tabela.js"></script>
-            </table>
+
+        <table>
+            <tr>
+                <th onclick="setarGraficoPotencia()" class="tb_escolheGrafico_TD">Gráfico de consumo em Watts</th>
+                <th onclick="setarGraficoConsumo()" class="tb_escolheGrafico_TD">Gráfico de consumo em dinheiros</th>
+            </tr>
+        </table>
+
+        <div id="grafico_Consumo_em_W">
+            <div id="Consumo_W"></div>
+            <div>
+                <h3>Consumo de energia em Watts por dia registrado</h3>
+                <table id="tabelaPotencia">
+                    <script type="text/javascript" src="./tabelaPotencia.js"></script>
+                </table>
+            </div>
+        </div>
+
+        <div id="grafico_Consumo_em_Dinheiros">
+            <div id="Consumo_Reais"></div>
+            <div>
+                <h3>Consumo em R$ por dia registrado</h3>
+                <table id="tabelaConsumo">
+                    <script type="text/javascript" src="./tabelaConsumo.js"></script>
+                </table>
+            </div>
         </div>
     </body>
 </html>
