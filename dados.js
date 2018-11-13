@@ -36,7 +36,7 @@ function geraDados(qtdDias, rangeConsumo, qtdDispositivos){
 }
 
 const RANGE = Math.floor(Math.random() *(1000 - 20) + 20);
-const DISPOSITIVOS = Math.floor(Math.random() * (8 - 2) + 2);
+const DISPOSITIVOS = Math.floor(Math.random() * 4 + 2);
 const DIAS = Math.floor(Math.random() * (20 - 2) + 2);
 
 /*	objeto usado para passar as informações para gerar os gráficos e as tabelas

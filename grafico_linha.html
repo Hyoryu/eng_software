@@ -8,32 +8,33 @@
         <link rel="stylesheet" type="text/css" href="estilo.css">
     </head>
     <body>
+        <center>
+            <table>
+                <tr>
+                    <th onclick="setarGraficoPotencia()" class="tb_escolheGrafico_TD">Gráfico de consumo em Watts</th>
+                    <th onclick="setarGraficoConsumo()" class="tb_escolheGrafico_TD">Gráfico de consumo em reais</th>
+                </tr>
+            </table>
 
-        <table>
-            <tr>
-                <th onclick="setarGraficoPotencia()" class="tb_escolheGrafico_TD">Gráfico de consumo em Watts</th>
-                <th onclick="setarGraficoConsumo()" class="tb_escolheGrafico_TD">Gráfico de consumo em dinheiros</th>
-            </tr>
-        </table>
-
-        <div id="grafico_Consumo_em_W">
-            <div id="Consumo_W"></div>
-            <div>
-                <h3>Consumo de energia em Watts por dia registrado</h3>
-                <table id="tabelaPotencia">
-                    <script type="text/javascript" src="./tabelaPotencia.js"></script>
-                </table>
+            <div id="grafico_Consumo_em_W">
+                <div id="Consumo_W"></div>
+                <div>
+                    <h3>Consumo de energia em Watts por dia registrado</h3>
+                    <table id="tabelaPotencia">
+                        <script type="text/javascript" src="./tabelaPotencia.js"></script>
+                    </table>
+                </div>
             </div>
-        </div>
 
-        <div id="grafico_Consumo_em_Dinheiros">
-            <div id="Consumo_Reais"></div>
-            <div>
-                <h3>Consumo em R$ por dia registrado</h3>
-                <table id="tabelaConsumo">
-                    <script type="text/javascript" src="./tabelaConsumo.js"></script>
-                </table>
+            <div id="grafico_Consumo_em_Dinheiros">
+                <div id="Consumo_Reais"></div>
+                <div>
+                    <h3>Consumo em R$ por dia registrado</h3>
+                    <table id="tabelaConsumo">
+                        <script type="text/javascript" src="./tabelaConsumo.js"></script>
+                    </table>
+                </div>
             </div>
-        </div>
+        </center>
     </body>
 </html>

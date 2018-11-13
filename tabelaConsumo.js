@@ -1,6 +1,7 @@
 //adicionar "Dispositivos" como a 1ª coluna da tabela
 let tbConsumo_headersContent = `<th class="tb_potTH">${"Dispositivos"}</th>\n`;
 
+
 //adicionar n dias como colunas da tabela
  for(let i = 0; i < dinheiros.length; i++)
  	tbConsumo_headersContent += `<th class="tb_potTH">${dinheiros[i][0]}</th>\n`;

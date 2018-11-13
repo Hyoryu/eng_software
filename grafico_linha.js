@@ -19,6 +19,7 @@ function drawChart() {
         var options = {
             chart: {title: 'Consumo de energia em Watts'},
             titleTextStyle: { color: '#FFFFFF' },
+            legend: {textStyle: {color: '#FFFFFF'}},
             width: 1200,
             vAxis: {
                 title: 'Potência (W)',
@@ -31,7 +32,7 @@ function drawChart() {
                     color: "#FFFFFF"
                 }
             },
-            backgroundColor: '#333333' 
+            backgroundColor: '#666666'//'#333333' 
         };
         var chart = new google.charts.Line(document.getElementById('Consumo_W'));
         chart.draw(data, google.charts.Line.convertOptions(options));
@@ -51,6 +52,7 @@ function drawChart() {
         let options = {
             chart: {title: 'Consumo de energia em R$'},
             titleTextStyle: { color: '#FFFFFF' },
+            legend: {textStyle: {color: '#FFFFFF'}},
             width: 1000,
             vAxis: {
                 title: 'Custo R$',
@@ -63,7 +65,7 @@ function drawChart() {
                     color: "#FFFFFF"
                 }
             },
-            backgroundColor: '#333333'
+            backgroundColor: '#666666'//'#333333'
         };
         let CustoDinheiros = new google.charts.Line(document.getElementById('Consumo_Reais'));
         CustoDinheiros.draw(data1, google.charts.Line.convertOptions(options));
